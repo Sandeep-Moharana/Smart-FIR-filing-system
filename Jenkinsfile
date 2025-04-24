@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git credentialsId: 'github-token', url: 'https://github.com/Sandeep-Moharana/Smart-FIR-filing-system.git'
             }
         }
 
